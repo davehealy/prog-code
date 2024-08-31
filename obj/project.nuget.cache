@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "SDMvO26TeoM=",
+  "success": true,
+  "projectFilePath": "/Users/davidhealy/Desktop/prog_code/Programmer.csproj",
+  "expectedPackageFiles": [
+    "/Users/davidhealy/.nuget/packages/microsoft.netframework.referenceassemblies/1.0.3/microsoft.netframework.referenceassemblies.1.0.3.nupkg.sha512",
+    "/Users/davidhealy/.nuget/packages/microsoft.netframework.referenceassemblies.net48/1.0.3/microsoft.netframework.referenceassemblies.net48.1.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -48,12 +48,12 @@ namespace Programmer
 			((Control)this).set_Visible(false);
 		}
 
-		protected unsafe override void WndProc(ref Message msg)
+		protected unsafe override void WndProc(Message msg)
 		{
-			if (((Message)(ref msg)).get_Msg() == 111)
+			if (((Message)(msg)).get_Msg() == 111)
 			{
 				int[] array = new int[7];
-				byte* ptr = (byte*)((Message)(ref msg)).get_LParam().ToPointer();
+				byte* ptr = (byte*)((Message)(msg)).get_LParam().ToPointer();
 				int.Parse(ptr->ToString());
 				for (int i = 0; i < 7; i++)
 				{
@@ -70,7 +70,7 @@ namespace Programmer
 				}
 				ReceiveCommand(array[0], iD, array[3], array[4], num, questionNo);
 			}
-			((Form)this).WndProc(ref msg);
+			((Form)this).WndProc(msg);
 		}
 
 		public void ReceiveCommand(int Info_Type, int ID, int mType, int mMode, int Answer, int QuestionNo)

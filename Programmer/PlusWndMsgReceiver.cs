@@ -36,13 +36,13 @@ namespace Programmer
 			((Control)this).set_Visible(false);
 		}
 
-		protected unsafe override void WndProc(ref Message msg)
+		protected unsafe override void WndProc(Message msg)
 		{
-			if (((Message)(ref msg)).get_Msg() == 111)
+			if (((Message)(msg)).get_Msg() == 111)
 			{
 				byte[] array = new byte[5];
 				byte[] array2 = new byte[250];
-				byte* ptr = (byte*)((Message)(ref msg)).get_LParam().ToPointer();
+				byte* ptr = (byte*)((Message)(msg)).get_LParam().ToPointer();
 				for (int i = 0; i < 5; i++)
 				{
 					array[i] = Convert.ToByte(ptr[i]);
@@ -143,7 +143,7 @@ namespace Programmer
 				}
 				}
 			}
-			((Form)this).WndProc(ref msg);
+			((Form)this).WndProc(msg);
 		}
 
 		protected override void Dispose(bool disposing)

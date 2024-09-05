@@ -9,12 +9,12 @@ namespace Programmer
 
 		public event EventHandler OnSetIdOk;
 
-		protected unsafe override void WndProc(ref Message msg)
+		protected unsafe override void WndProc(Message msg)
 		{
-			if (((Message)(ref msg)).get_Msg() == 111)
+			if (((Message)(msg)).get_Msg() == 111)
 			{
 				byte[] array = new byte[20];
-				byte* ptr = (byte*)((Message)(ref msg)).get_LParam().ToPointer();
+				byte* ptr = (byte*)((Message)(msg)).get_LParam().ToPointer();
 				for (int i = 0; i < 20; i++)
 				{
 					array[i] = Convert.ToByte(ptr[i]);
@@ -39,7 +39,7 @@ namespace Programmer
 					}
 				}
 			}
-			((Form)this).WndProc(ref msg);
+			((Form)this).WndProc(msg);
 		}
 	}
 }

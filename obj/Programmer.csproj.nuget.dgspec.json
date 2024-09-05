@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/davidhealy/Desktop/prog_code/Programmer.csproj": {}
+    "/Users/davidhealy/Desktop/Game Show Quiz Show/quizXpress apps/prog_code/Programmer.csproj": {}
   },
   "projects": {
-    "/Users/davidhealy/Desktop/prog_code/Programmer.csproj": {
+    "/Users/davidhealy/Desktop/Game Show Quiz Show/quizXpress apps/prog_code/Programmer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/davidhealy/Desktop/prog_code/Programmer.csproj",
+        "projectUniqueName": "/Users/davidhealy/Desktop/Game Show Quiz Show/quizXpress apps/prog_code/Programmer.csproj",
         "projectName": "Programmer",
-        "projectPath": "/Users/davidhealy/Desktop/prog_code/Programmer.csproj",
+        "projectPath": "/Users/davidhealy/Desktop/Game Show Quiz Show/quizXpress apps/prog_code/Programmer.csproj",
         "packagesPath": "/Users/davidhealy/.nuget/packages/",
-        "outputPath": "/Users/davidhealy/Desktop/prog_code/obj/",
+        "outputPath": "/Users/davidhealy/Desktop/Game Show Quiz Show/quizXpress apps/prog_code/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/davidhealy/.nuget/NuGet/NuGet.Config"
